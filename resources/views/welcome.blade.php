@@ -30,9 +30,10 @@
 
             <div class="content">
                 <!-- My Logic and Content will come here -->
-                
-                    {{ $mydata }}   
-               
+                <h1 style="text-align: center;">{{$myhead}}</h1><br>
+                {{$mychap}} :
+                {{$myvers}}
+                {{$mydata}}
             </div>
         </div>
     </body>
