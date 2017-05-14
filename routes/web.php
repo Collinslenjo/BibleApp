@@ -12,3 +12,5 @@
 */
 
 Route::get('/','BibleviewController@index');
+
+Route::get('exodus','Exodus@index');
