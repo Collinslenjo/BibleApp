@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Bible</title>
+        <title>Genesis</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -30,8 +30,20 @@
 
             <div class="content">
                 <!-- My Logic and Content will come here -->
-                <h2>Holy Bible</h2>
-                <p>Still in development</p>
+
+                <h1>{{$json_a['chapters'][0][0]['bookname']}}</h1>
+                @foreach($json_a['chapters'] as $play)
+                <div class="panel-body">
+                @foreach($play as $p)
+                <ul class="list-unstyled activity-list">
+                <li>
+                {{$p['chapter']}} : {{$p['verse']}} <br/> 
+                {{$p['text']}}<br/>
+                </li>
+                </ul>
+                @endforeach
+                </div>
+                @endforeach
 
             </div>
         </div>
