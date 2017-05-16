@@ -33,8 +33,8 @@
                 <h2>Holy Bible</h2>
                 <p>Still in development</p>
 
-                
-                <h1>{{$json_a['chapters'][0][0]['bookname']}}</h1>
+
+                <h1>{{$json_a['books']}}</h1>
                 @foreach($json_a['chapters'] as $play)
                 <div class="panel-body">
                 @foreach($play as $p)
