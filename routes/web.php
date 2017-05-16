@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/','BibleviewController@index');
+Route::get('/','BooksInfoController@index');
 
 Route::get('/genesis','BibleviewController@genesis');
 
