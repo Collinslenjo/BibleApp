@@ -35,6 +35,17 @@
 
                 <h1>{{ $json_a['books'][0]['name'] }}</h1>
 
+                @foreach($json_a['books'] as $play)
+                <div class="panel-body">
+                <ul class="list-unstyled activity-list">
+                <li>
+                <h3>{{$play['id']}} : {{$play['name']}}</h3>
+                Contains :{{$play['chapters']}} chapters<br/><hr>
+                </li>
+                </ul>
+                </div>
+                @endforeach
+
 
             </div>
         </div>
