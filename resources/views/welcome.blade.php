@@ -33,7 +33,7 @@
                 <h2>Holy Bible</h2>
                 <p>Still in development</p>
 
-                <h1>{{ $json_a['books'][0]['name'] }}</h1>
+                <h1>This is a {{ $json_a['bible'] }} bible version.</h1>
 
                 @foreach($json_a['books'] as $play)
                 <div class="panel-body">
