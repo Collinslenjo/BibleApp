@@ -1,4 +1,4 @@
-## BiBle App
+## BiBle App KJV version
 
 > Search and Read the bible Online
 

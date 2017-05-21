@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Bible</title>
+        <title>Holy Bible | KJV</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -33,13 +33,13 @@
                 <h2>Holy Bible</h2>
                 <p>Still in development</p>
 
-                <h1>This is a {{ $json_a['bible'] }} bible version.</h1>
+                <h3>This is a {{ $json_a['bible'] }} bible version.</h3>
 
                 @foreach($json_a['books'] as $play)
                 <div class="panel-body">
                 <ul class="list-unstyled activity-list">
                 <li>
-                <h3>{{$play['id']}} : {{$play['name']}}</h3>
+                <h4>{{$play['id']}} : {{$play['name']}}</h4>
                 Contains :{{$play['chapters']}} chapters<br/><hr>
                 </li>
                 </ul>
