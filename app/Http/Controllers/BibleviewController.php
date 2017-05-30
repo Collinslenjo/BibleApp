@@ -23,5 +23,9 @@ class BibleviewController extends Controller
       $json_a=json_decode($myrawdata,true);
       return view('leviticus',['json_a'=>$json_a]);
     }
-    public function numbers(){}
+    public function numbers(){
+      $myrawdata = file_get_contents(__DIR__.'/data/books/4-num.json',true);
+      $json_a=json_decode($myrawdata,true);
+      return view('numbers',['json_a'=>$json_a]);
+    }
 }
