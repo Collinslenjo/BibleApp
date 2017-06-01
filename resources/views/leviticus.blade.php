@@ -3,20 +3,36 @@
 
 <div class="content">
     <!-- My Logic and Content will come here -->
-
-    <h1>{{$json_a['chapters'][0][0]['bookname']}}</h1>
-    @foreach($json_a['chapters'] as $play)
+    <div class="col-md-10 col-md-offset-1">
+        <div class="row">
+            <div class="panel">
+    <div class="panel-header">
+        <h3 style="text-align:center;">{{$json_a['chapters'][0][0]['bookname']}}</h3>
+    </div>
+    <hr>
     <div class="panel-body">
+
+     @foreach($json_a['chapters'] as $play)
+    <div class="panel-body">
+    <h4>Chapter {{$play[0]['chapter']}}</h4>
     @foreach($play as $p)
     <ul class="list-unstyled activity-list">
     <li>
-    {{$p['chapter']}} : {{$p['verse']}} <br/> 
+    <u>{{$p['chapter']}} : {{$p['verse']}} </u> 
     {{$p['text']}}<br/>
     </li>
     </ul>
     @endforeach
     </div>
-    @endforeach
+    <hr>
+    @endforeach 
+        
+    </div>
+</div>
+        </div>
+    </div>
+
+    
 
 </div>
 
