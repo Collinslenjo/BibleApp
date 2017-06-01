@@ -1,3 +1,5 @@
+@extends('layout.app')
+@section('content')
 
 <div class="content">
     <!-- My Logic and Content will come here -->
@@ -17,5 +19,6 @@
     </div>
     @endforeach
 
-
 </div>
+
+@endsection
