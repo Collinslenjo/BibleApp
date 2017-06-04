@@ -11,18 +11,22 @@
         <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
     </head>
     <body>
+    <!-- My navigation starts here -->
         <div class="flex-center position-ref full-height">
-
-                <div class="top-right links">
-                        <a href="{{ url('/') }}">Home</a>
-                        <a href="{{ url('/genesis') }}">Genesis</a>
-                        <a href="{{ url('/exodus') }}">Exodus</a>
-                        <a href="{{ url('/leviticus') }}">Leviticus</a>
-                        <a href="{{ url('/numbers') }}">Numbers</a>
-                        <a href="{{ url('/deutronomy') }}">Deutronomy</a>
-                </div>
-
+            <div class="nav">
+                <nav>
+                     <ul class="top-right links">
+                        <li><a href="{{ url('/') }}">Home</a></li>
+                        <li><a href="{{ url('/genesis') }}">Genesis</a></li>
+                        <li><a href="{{ url('/exodus') }}">Exodus</a></li>
+                        <li><a href="{{ url('/leviticus') }}">Leviticus</a></li>
+                        <li><a href="{{ url('/numbers') }}">Numbers</a></li>
+                        <li><a href="{{ url('/deutronomy') }}">Deutronomy</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
+        <!-- My navigation ends here -->
 
 <div class="wrapper">
     @yield('content')
