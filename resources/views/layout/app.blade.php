@@ -12,16 +12,16 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
+
                 <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
-                    @endif
+                        <a href="{{ url('/') }}">Home</a>
+                        <a href="{{ url('/genesis') }}">Genesis</a>
+                        <a href="{{ url('/exodus') }}">Exodus</a>
+                        <a href="{{ url('/leviticus') }}">Leviticus</a>
+                        <a href="{{ url('/numbers') }}">Numbers</a>
+                        <a href="{{ url('/deutronomy') }}">Deutronomy</a>
                 </div>
-            @endif
+
         </div>
 
 <div class="wrapper">
