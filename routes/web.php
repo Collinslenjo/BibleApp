@@ -17,3 +17,4 @@ Route::get('genesis','BibleviewController@genesis');
 Route::get('exodus','Exodus@index');
 Route::get('leviticus','BibleviewController@leviticus');
 Route::get('numbers','BibleviewController@numbers');
+Route::get('deutronomy','BibleviewController@deutronomy');
