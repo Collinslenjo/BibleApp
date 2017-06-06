@@ -18,3 +18,6 @@ Route::get('exodus','Exodus@index');
 Route::get('leviticus','BibleviewController@leviticus');
 Route::get('numbers','BibleviewController@numbers');
 Route::get('deutronomy','BibleviewController@deutronomy');
+Route::get('deutronomy','BibleviewController@joshua');
+Route::get('deutronomy','BibleviewController@judges');
+Route::get('deutronomy','BibleviewController@ruth');
