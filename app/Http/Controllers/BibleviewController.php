@@ -33,4 +33,19 @@ class BibleviewController extends Controller
       $json_a=json_decode($myrawdata,true);
       return view('deutronomy',['json_a'=>$json_a]);
     }
+    public function joshua(){
+      $myrawdata = file_get_contents(__DIR__.'/data/books/6-jos.json',true);
+      $json_a=json_decode($myrawdata,true);
+      return view('joshua',['json_a'=>$json_a]);
+    }
+    public function judges(){
+      $myrawdata = file_get_contents(__DIR__.'/data/books/7-jdg.json',true);
+      $json_a=json_decode($myrawdata,true);
+      return view('judges',['json_a'=>$json_a]);
+    }
+    public function ruth(){
+      $myrawdata = file_get_contents(__DIR__.'/data/books/8-rut.json',true);
+      $json_a=json_decode($myrawdata,true);
+      return view('ruth',['json_a'=>$json_a]);
+    }
 }
