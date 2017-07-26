@@ -21,3 +21,5 @@ Route::get('deutronomy','BibleviewController@deutronomy');
 Route::get('joshua','BibleviewController@joshua');
 Route::get('judges','BibleviewController@judges');
 Route::get('ruth','BibleviewController@ruth');
+Route::get('samuel-1','BibleviewController@samuel-1');
+Route::get('samuel-2','BibleviewController@samuel-2');
